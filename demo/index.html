@@ -122,7 +122,7 @@
 
                         <div class="form-group">
                             <label></label>
-                            <input type="number" placeholder="Código Postal:" maxlenth="5" id="codigo postal">
+                            <input type="text" placeholder="Código Postal:" maxlenth="5" id="codigo postal">
                         </div>
 
                         <div class="form-group">
@@ -132,7 +132,31 @@
 
                         <div class="form-group">
                             <label></label>
-                            <input type="text" placeholder="Comentario:" maxlength="150" id="comentario" name="comentario">
+                                <select name="servicio" id="servicio">
+                                    <option value="Servicio:">Servicio:</option>
+                                    <option value="Fontanería y Gas">Fontanería y Gas</option>                            
+                                    <option value="Eléctrica">Eléctrica</option>
+                                    <option value="Aire Acondicionado">Aire Acondicionado</option>
+                                    <option value="Calefación">Calefación</option>
+                                    <option value="Manutención de Mosquiteras">Manutención de Mosquiteras</option>
+                                    <option value="Mamparas">Mamparas</option>
+                                    <option value="Cartón de Yeso">Cartón de Yeso</option>
+                                    <option value="Traslado de Vehiculos">Traslado de Vehiculos</option>
+                                    <option value="Informática">Informática</option>
+                                    <option value="Montaje de Muebles">Montaje de Muebles</option>
+                                    <option value="Ventiladores de Techo">Ventiladores de Techo</option>
+                                    <option value="Albañileria">Albañileria</option>
+                                    <option value="Limpieza de Campanas">Limpieza de Campanas</option>
+                                    <option value="Suportes de TV">Suportes de TV</option>
+                                    <option value="Panel de TV">Panel de TV</option>
+                                    <option value="Instalación de Piso">Instalación de Piso</option>
+                                    <option value="Instalación de Lavadoras">Instalación de Lavadoras</option>
+
+                        
+
+                        <div class="form-group">
+                            <label></label>
+                            <input type="text" placeholder="Descripción:" maxlength="150" id="Descripción" name="Descripción">
                         </div>
 
                         <div class="form-group">
@@ -154,8 +178,10 @@
                             
                         </div>
 
-                        <p>Llamar por telefono</p>
-                        <a href="tel:+34674961759">674961759</a>
+                        
+                        <label>Llamar por telefono</label>
+                        <div class="topbar"><a href="tel:+34674961759" class="btnllamar" onclick="return(navigator.userAgent.match(/Android | iPhone | movile | i)) != null;" >674961759</a>
+                        </div>
 
                          
 
@@ -187,7 +213,7 @@
 
 
             <div>
-                padding 10px
+                
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/u1eNxDk8p1A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             </div>
@@ -210,8 +236,8 @@
                 <a href="#">Montaje de Muebles</a>
                 <a href="#">Instalación de Pisos Vinílicos</a>
                 <a href="#">Manutención en Telas Mosquiteras</a>
-                <a href="#">Instalación y Mantención de Aire Acondicionado</a>
-                <a href="#">Instalación y Mantención de Radiadores</a>
+                <a href="#">Instalación y Manutención de Aire Acondicionado</a>
+                <a href="#">Instalación y Manutención de Radiadores</a>
                 <a href="#">Colocación de barras de cortinas, tenderos, cuadros y espejos</a>
                 <a href="#">Instalación de Mamparas</a>
                 <a href="#">Pared de placas de cartón de yeso</a>
