@@ -63,8 +63,11 @@
                         </div>
 
                         <div class="form-group">
-                            <label></label>
-                            <input type="text" placeholder="Correo Electrónico:" maxlength="50" id="Correo Electrónico" name="Correo Electrónico">
+                            
+                                <label for="correo"></label>
+                                <input type="text" placeholder="Correo Eletrónico:" id="correo"/>        
+                                <input type="button" class="btn btn-success" value="Validar" onclick="validarCorreo(form.correo.value)">
+                            
                         </div>
 
                         <div class="form-group">
@@ -172,11 +175,33 @@
                         </div>
 
 
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-primary">Enviar</button>
-                            <button type="reset" class="btn btn-primary">Limpiar</button>
+                        <div align="center" class="form-group">
                             
-                        </div>
+                            <button type="button" class="btn btn-success" value="Validar Córreo"> Enviar Correo Electrónico</button>
+
+                        </div><br>
+                        
+
+                        <script>
+                        function validarCorreo(correo) {
+                            var expReg=/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+                            var esValido= expReg.test(correo);
+                            if(esValido==true){
+                                alert('El Correo Electrónico es Valido');
+                            }
+                            else{
+                                alert('El Correo Electrónico NO es Valido');
+                            }
+                        }
+                            </script>
+                        
+                        
+
+                        <div align="center" class="form-group">
+
+                            <button type="reset" class="btn btn-primary">Limpiar Formulario</button>
+                            
+                        </div><br>
 
                         
                         <label>Llamar por telefono</label>
